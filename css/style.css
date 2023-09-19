@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    background: #18978F;
+    padding: 16px;
+    color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.input_section > h2 {
+    text-align: center;
+}
+
+.input_section > form > .input {
+    margin: 8px;
+}
+
+.input_section > form > button {
+    font-family: 'Roboto Slab', serif;
+    background-color: #18978F;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 95%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #18978F;
+}
+
+.input_section > form > .input > label {
+    font-weight: bold;    
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    font-weight: bold;
+}
+
+.book_shelf .listBook .book_info {
+    padding: 16px;
+    border: 2px solid #18978F;
+    border-radius: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.book_shelf .listBook .book_info button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    border: 0;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.completedButton {
+    background: url('../assets/read.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.uncompletedButton {
+    background: url('../assets/book.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.deleteButton {
+    background: url('../assets/trash-bin.svg');
+    background-size: contain;
+    width: 28px;
+    height: 28px;
+}
